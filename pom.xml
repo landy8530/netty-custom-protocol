@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.lyx.netty</groupId>
+  <artifactId>netty-custom-protocol</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <description>netty自定义协议</description>
+  
+  <name>netty-custom-protocol</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- <dependency>
+ 		<groupId>io.netty</groupId>
+ 		<artifactId>netty</artifactId>
+ 		<version>3.6.3.Final</version>
+ 		<scope>compile</scope>
+	</dependency> -->
+	<dependency>
+		<groupId>io.netty</groupId>
+		<artifactId>netty-all</artifactId>
+		<!-- <version>4.0.25.Final</version> -->
+		<version>4.1.13.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>com.alibaba</groupId>
+		<artifactId>fastjson</artifactId>
+		<version>1.1.26</version>
+		<type>jar</type>
+		<scope>compile</scope>
+	</dependency>
+	<!-- marshalling -->
+	<dependency>
+	    <groupId>org.jboss.marshalling</groupId>
+	    <artifactId>jboss-marshalling-serial</artifactId>
+	    <!-- <version>2.0.0.Final</version> --> <!-- 需要JDK1.8支持 -->
+	    <version>1.4.11.Final</version> <!-- 需要JDK1.7支持 -->
+	</dependency>
+	<dependency>
+         <groupId>org.jboss.marshalling</groupId>
+         <artifactId>jboss-marshalling</artifactId>
+         <version>1.4.11.Final</version>
+    </dependency>
+	<!-- log4j start -->
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.17</version>
+	</dependency>
+	<!-- log4j end -->
+	<!-- slf4j bound to Log4j start -->
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-api</artifactId>
+		<version>1.7.6</version>
+	</dependency>
+	<dependency>
+		<groupId>org.slf4j</groupId>
+		<artifactId>slf4j-log4j12</artifactId>
+		<version>1.7.6</version>
+	</dependency>
+	<!-- slf4j bound to Log4j end -->
+  </dependencies>
+</project>
