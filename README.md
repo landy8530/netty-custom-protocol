@@ -1,6 +1,7 @@
 # netty-custom-protocol
 netty 自定义协议
 此文参考Netty权威指南《私有协议栈开发》章节
+
 1.绝大多数的私有协议栈开发都是基于TCP/IP协议，所以Netty的NIO TCP协议栈可以非常方便的进行私有协议栈的定制和开发。
 自定义协议主要的步骤：
 
